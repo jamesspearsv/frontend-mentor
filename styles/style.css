@@ -10,22 +10,30 @@
   --color-white: #ffffff;
   --color-off-white: #bababa;
   --border-radius: 10px;
+  --padding-margin: 1rem;
+  --font-size-main: 14px;
+  --font-size-smaller: 11px;
 }
 
 * {
   font-family: "Inter";
   color: var(--color-white);
-  font-size: 14px;
+  font-size: var(--font-size-main);
 }
 
 /* Class styles */
 .attribution {
-  font-size: 11px;
+  font-size: var(--font-size-smaller);
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--color-primary-green);
+  font-size: var(--font-size-smaller);
+}
+
+.by-line {
+  color: var(--color-off-white);
 }
 
 .container {
@@ -33,20 +41,38 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
 }
 
-.main {
-  margin: auto;
-  width: 90%;
-  background-color: var(--color-dark-grey);
-  gap: 1.5rem;
-  padding: 1rem;
-  border-radius: var(--border-radius);
+.headshot {
+  border-radius: 15rem;
+  width: 25%;
+  height: auto;
 }
 
 .link-list {
-  width: 90%;
+  width: calc(100% - var(--padding-margin));
   gap: 1rem;
+}
+
+.main {
+  width: 90%;
+  background-color: var(--color-dark-grey);
+  border-radius: var(--border-radius);
+  text-align: center;
+  padding: var(--padding-margin);
+  gap: var(--padding-margin);
+}
+
+.name:first-child {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.name:last-child {
+  color: var(--color-primary-green);
+  font-weight: 600;
+  font-size: var(--font-size-smaller);
 }
 
 .social-link {
@@ -54,6 +80,15 @@
   width: 100%;
   padding: 1rem;
   border-radius: var(--border-radius);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--color-primary-green);
+  color: var(--color-off-black);
+  cursor: pointer;
 }
 
 /* Tag styles */
@@ -68,4 +103,11 @@ footer {
   left: 0;
   right: 0;
   height: 5dvh;
+}
+
+/* Desktop Styling */
+@media only screen and (min-width: 600px) {
+  .main {
+    width: clamp(300px, 25%, 400px);
+  }
 }
