@@ -1,0 +1,71 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap");
+
+/* Variables & global styles */
+:root {
+  --color-off-black: #141414;
+  --color-primary-green: #c4f82a;
+  --color-dark-grey: #1f1f1f;
+  --color-light-grey: #333333;
+  --color-white: #ffffff;
+  --color-off-white: #bababa;
+  --border-radius: 10px;
+}
+
+* {
+  font-family: "Inter";
+  color: var(--color-white);
+  font-size: 14px;
+}
+
+/* Class styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  margin: auto;
+  width: 90%;
+  background-color: var(--color-dark-grey);
+  gap: 1.5rem;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+}
+
+.link-list {
+  width: 90%;
+  gap: 1rem;
+}
+
+.social-link {
+  background-color: var(--color-light-grey);
+  width: 100%;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+}
+
+/* Tag styles */
+body {
+  height: 100dvh;
+  background-color: var(--color-off-black);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5dvh;
+}
