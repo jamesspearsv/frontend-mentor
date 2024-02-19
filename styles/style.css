@@ -32,10 +32,6 @@
   font-size: var(--font-size-smaller);
 }
 
-.by-line {
-  color: var(--color-off-white);
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -64,17 +60,6 @@
   gap: var(--padding-margin);
 }
 
-.name:first-child {
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-.name:last-child {
-  color: var(--color-primary-green);
-  font-weight: 600;
-  font-size: var(--font-size-smaller);
-}
-
 .social-link {
   background-color: var(--color-light-grey);
   width: 100%;
@@ -95,6 +80,21 @@
 body {
   height: 100dvh;
   background-color: var(--color-off-black);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+h3 {
+  color: var(--color-primary-green);
+  font-weight: 600;
+  font-size: var(--font-size-smaller);
+}
+
+h3 {
+  color: var(--color-off-white);
 }
 
 footer {
